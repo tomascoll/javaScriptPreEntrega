@@ -12,6 +12,7 @@ function siQuieres(a){
             sumar (a.precio)
             listaProductos.push(a.nombre);
             console.log(a.nombre + ' fue agregado');
+        }else if (siono === 'no'){
         }else{
             alert('Opcion incorrecta');
         }
@@ -89,7 +90,7 @@ do {
 
                 case 4:
                     break;
-                    
+
                 default:
                     alert('Opcion incorrecta');
                     break;
