@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Roboto+Mono:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #edeef0;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    padding-top: 64px;
+    animation: transitionIn 1s;
+  }
+  
+@keyframes transitionIn {
+    from {
+      opacity: 0;
+      transform: rotateX(-10deg);
+    }
+    to {
+      opacity: 1;
+      transform: rotateX(0);
+    }
+  }
+
+.header {
+    height: 64px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(60px);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 4%);
+    cursor: default;
+}
+
+.header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.section {
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 48px;
+    overflow: hidden;
+}
+
+.section:hover{
+    transition: .5s;
+    box-shadow:  20px 20px 60px #dfdede,
+             -20px -20px 60px #ffffff;
+
+}
+
+.section .meta {
+    padding: 24px;
+}
+
+.content {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 48px 0;
+}
+
+h1{
+    font-family: 'Quicksand', sans-serif;
+    color: #535353;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 2px;
+    font-family: 'Quicksand', sans-serif;
+    color: #535353;
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+    color: #5f5f5f;
+}
+
+.addBoton{
+    display: flex;
+    justify-content: center;
+    background-color: #303030;
+    color: #dddddd;
+    padding: 10px 0 10px 0;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.addBoton:hover{
+    transition: .5s;
+    background-color: #444444;
+}
